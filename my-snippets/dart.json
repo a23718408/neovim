@@ -1,0 +1,14 @@
+{
+  "create a stateful widget": {
+    "prefix": "stf",
+    "body": "import 'package:flutter/material.dart';\nclass ${1:widgetName} extends StatefulWidget {\n\tconst ${1:widgetName}({Key? key}) : super(key: key);\n\n\t@override\n\t_${1:widgetName}State createState() => _${1:widgetName}State();\n}\n\nclass _${1:widgetName}State extends State<${1:widgetName}> {\n\t@override\n\tWidget build(BuildContext context) {\n\treturn Container(\n\t\t\t$0\n\t\t);\n\t}\n}"
+  },
+  "create a stateless widget": {
+    "prefix": "stl",
+    "body": "import 'package:flutter/material.dart';\nclass ${1:widgetName} extends StatelessWidget {\n\tconst ${1:widgetName}({ Key? key }) : super(key: key);\n\n\t@override\n\tWidget build(BuildContext context) {\n\t\treturn Container(\n\t\t\t$0\n\t\t);\n\t}\n}"
+  },
+  "List range": {
+    "prefix": "lr",
+    "body": "for (int i in List.generate($1, (index) => index)){\n\t$0\n}"
+  }
+}
